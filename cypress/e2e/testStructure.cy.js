@@ -19,7 +19,7 @@ afterEach(()=>{
     //similiar to afterMethod in TestNG
 })
 
-it('Opening a web application', () =>{
+it.skip('Opening a web application', () =>{
     cy.visit('/registration_form');
   
 })
@@ -27,16 +27,16 @@ it('test2', () =>{
     expect(false).to.equal(false);
   
 })
-it('test3', () =>{
+xit('test3', () =>{
     expect(false).not.to.equal(true);
   
 })
 
-it('test3', () =>{
+it('test4', () =>{
     expect(5).to.equal(5);
   
 })
-it('test3', () =>{
+it('test5', () =>{
     expect(true).to.equal('5'==5);
   
 })
