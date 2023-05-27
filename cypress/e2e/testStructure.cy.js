@@ -6,6 +6,7 @@ describe('Context: My First Tests', ()=>{
 before(()=>{
     // runs once before all test cases in this describe block, like beforeClass in Test NG
 })
+
 beforeEach(()=>{
     //runs before each test case, like beforeMethod in TestNG
     cy.clearCookies();
