@@ -3,6 +3,9 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     baseUrl:'https://practice.cydeo.com/',
+    env:{
+      login:"/login"
+    },
     viewportHeight:800,
     viewportWidth:1200,
     video:false, // it prevent to generate video or stop to default generate video
