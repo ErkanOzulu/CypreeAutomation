@@ -2,15 +2,13 @@
 
 describe('Alerts in Cypress Test Environment', { baseUrl: 'https://demoqa.com' }, () => {
   beforeEach(() => {
-    
     cy.clearCookies();
     cy.visit('/alerts');
   });
 
-it("Alert automatically handled",()=>{
-
-    cy.get('#confirmButton').click(); //Alert handled automatically by cypress
-})
+  it('Alert automatically handled', () => {
+    cy.get('#confirmButton').click(); // Alert handled automatically by cypress
+  });
 
   it('Check alert confirmation', () => {
     /**
