@@ -21,7 +21,6 @@ describe('How to API tests with cypress', () => {
       });
 
       // a loop for verification title
-      let index = 0;
       cy.fixture('bookTitles').then((expectedBookTitle) => {
         for (let i = 0; i < 8; i++) {
           expect(response.body.books[i].title).to.equal(expectedBookTitle[i]);
