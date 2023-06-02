@@ -26,4 +26,4 @@ jobs:
                 # since we have installed dependencies we set it false
                 install: false
                 browser: chrome
-                spec: cypress/e2e/**/*
+                spec: cypress/e2e/**/*, !cypress/e2e/1-getting-started/**/*, !cypress/e2e/2-advanced-examples/**/*
