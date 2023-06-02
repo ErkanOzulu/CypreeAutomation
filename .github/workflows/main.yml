@@ -27,3 +27,4 @@ jobs:
                 install: false
                 browser: chrome
                 spec: cypress/e2e/**/*, !cypress/e2e/1-getting-started/**/*, !cypress/e2e/2-advanced-examples/**/*
+                # to ignore to run we use !
